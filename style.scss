@@ -39,6 +39,7 @@ h1{
 h2{
    font-size: 3.43rem;
    font-weight: 400;
+   text-transform: uppercase;
 }
 h3{
    font-size: 1.2rem;
@@ -177,6 +178,21 @@ ul{
    padding: 16px 41px;
    margin-top: 60px;
    border: none;
+}
+.shop{
+   text-align: center;
+   padding: 145px 0 215px;
+}
+.subtitle{
+   text-transform: uppercase;
+   text-align: center;
+   padding: 20px 0 25px;
+}
+.shop-ad{
+   font-size: 1.7rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   padding-top: 50px;
 }
 .snowboarding{
    background: url(./img/bg.png) no-repeat center;

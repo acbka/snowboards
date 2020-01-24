@@ -19,7 +19,7 @@ function burgerMenu() {
       this.classList.toggle("burger-cross");
    })
 }
-
+// menu
 
 let menuItems = Array.from(document.querySelectorAll(".item"));
 
@@ -104,7 +104,7 @@ function scrollPage(){
    }
 } 
 
-//backgroundImage()
+backgroundImage()
 burgerMenu()
 activeMenuItem() 
 scrollPage()
