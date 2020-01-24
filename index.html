@@ -5,31 +5,121 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="./style.css">
-   <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
    <title>Snowboards</title>
 </head>
 <body>
-   <header>
+   <header id="home">
       <nav class="nav-menu">
-         <div class="logo">
-            <img src="./img/logo.png" alt="">
+         <div class="menu-wrap">
+            <div class="logo">
+               <img src="./img/logo.png" alt="">
+            </div>
+            <ul class="menu">
+               <li class="menu-item"><a class="item active" href="#home">home</a></li>
+               <li class="menu-item"><a class="item" href="#shop">SHOP</a></li>
+               <li class="menu-item"><a class="item" href="#event">EVENT</a></li>
+               <li class="menu-item"><a class="item" href="#features">features</a></li>
+               <li class="menu-item"><a class="item" href="#contact">Contact</a></li>
+            </ul>
          </div>
-         <ul class="menu">
-            <li class="item"><a href="#shop">SHOP</a></li>
-            <li class="item"><a href="#team">TEAM</a></li>
-            <li class="item"><a href="#events">EVENTS</a></li>
-            <li class="item"><a href="">EXPERIENCE</a></li>
-            <li class="item"><a href="">COMPANY</a></li>
-            <li class="item"><a href="">Contact</a></li>
-         </ul>
+         <div class="burger toggle">
+            <div class="burger-container">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
+         </div>
       </nav>
-      <div class="top1 top2">  
+      <div class="top1">  
          <div class="container">
             <h1>Run Over Everything</h1>
-            <button>See Details</button>
+            <button class="top-button">See Details</button>
+         </div>
+      </div>
+      <div class="top2 hidden">  
+         <div class="container">
+            <h1>Run Over Everything</h1>
+            <button class="top-button">See Details</button>
          </div>
       </div>
    </header>
+
+   <div class="shop" id="shop">
+
+   </div>
+   <div class="snowboarding" id="event">
+      <div class="container-600">
+         <h2>The Mountains Snowboarding ®</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt auctor facilisis. Nam massa dui, imperdiet et mi ut, sagittis viverra odio. Duis et lectus eu enim gravida vulputate nec eget nisi. Nunc ultrices velit blandit, dapibus lacus in, feugiat erat. Donec non porttitor augue, sit amet lacinia purus. Nulla fringilla quam est, luctus dapibus odio suscipit ut. Vivamus et lectus a nunc fringilla volutpat. Morbi sed congue sem.</p>
+         <p>Aliquam erat volutpat. Curabitur ut consequat arcu, eget laoreet est. Vivamus semper nibh sit amet libero hendrerit luctus. Fusce non bibendum lorem. Fusce laoreet risus eget tortor lobortis egestas. Etiam tempus quam sed felis viverra scelerisque. Integer fringilla libero risus, vel euismod turpis auctor ac. Proin elementum aliquet libero a dapibus. Mauris et tempor dolor.</p>
+      </div>
+   </div>
+   <div class="features" id="features">
+      <h2>Features</h2>
+      <span>
+         <img class="x-img" src="./img/x.png" alt="">
+      </span>
+      <div class="container-940">
+         <div class="features-img">
+            <img class="picture" src="./img/img1.png" alt="">
+            <p>Born Identity: Bringing Burton Hardgoods to Life</p>
+         </div>
+         <div class="features-img">
+            <img class="picture" src="./img/img2.png" alt="">
+            <p>Jeremy Jones: On That Street Grind</p>
+         </div>
+         <div class="features-img">
+            <img class="picture" src="./img/img3.png" alt="">
+            <p>Burton’s Tokyo Rail Days Recap</p>
+         </div>
+         <div class="features-img">
+            <img class="picture" src="./img/img4.png" alt="">
+            <p>Burton’s Tokyo Rail Days Preview</p>
+         </div>
+      </div>
+   </div>
+   <footer id="contact">
+      <div class="container-980">
+         <div class="footer-menu">
+            <div class="menu-section">
+               <h3>products</h3>
+               <ul>
+                  <li><a href="#">Mens</a></li>
+                  <li><a href="#">Womens</a></li>
+                  <li><a href="#">Youth</a></li>
+               </ul>
+            </div>
+            <div class="menu-section">
+               <h3>about</h3>
+               <ul>
+                  <li><a href="#">Careers and Internships</a></li>
+                  <li><a href="#">Sponsorships</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Catalog Request/Download</a></li>
+               </ul>
+            </div>
+            <div class="menu-section">
+               <h3>Customer Support</h3>
+               <ul>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Shipping and Order Tracking</a></li>
+                  <li><a href="#">Easy Returns</a></li>
+                  <li><a href="#">Warranty</a></li>
+                  <li><a href="#">Replacement Binding Parts</a></li>
+               </ul>
+            </div>
+            <div class="newsletter">
+               <h3>newsletter</h3>
+               <form action="">
+                  <input class="input" type="email" placeholder="Enter your email">
+                  <button class="go-button">GO</button>
+               </form>
+               <img class="social" src="./img/social.png" alt="">
+            </div>
+         </div>
+      </div>
+   </footer id="contact">
    <script src="./script.js"></script>
 </body>
 </html>
