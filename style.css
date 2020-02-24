@@ -64,6 +64,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .menu-wrap {
@@ -139,19 +140,6 @@ ul {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-.closeMenu .bar {
-  width: 25px;
-}
-.closeMenu .bar:first-child {
-  transform: translateY(7px) rotate(45deg);
-}
-.closeMenu .bar:nth-child(2) {
-  transform: scale(0);
-}
-.closeMenu .bar:last-child {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
 .toggle {
   display: none;
 }
@@ -203,7 +191,55 @@ ul {
 
 .shop {
   text-align: center;
-  padding: 145px 0 215px;
+  padding: 145px 20px 215px;
+}
+
+.carusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 0 20px;
+  position: relative;
+  max-height: 405px;
+}
+
+.images {
+  max-height: 405px;
+  text-align: center;
+}
+
+.image {
+  display: inline-block;
+  padding: 0 60px;
+}
+.image img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.visible {
+  display: inline-block;
+}
+
+.prev, .next {
+  cursor: pointer;
+}
+.prev img, .next img {
+  width: 100%;
+  height: auto;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  top: 40%;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  top: 40%;
 }
 
 .subtitle {
@@ -308,7 +344,7 @@ form {
 }
 
 .go-button {
-  padding: 12px 20px;
+  padding: 11px 20px;
   background: #c7c7c7;
   border: none;
   font-size: 1.07rem;
@@ -394,6 +430,10 @@ form {
   h1 {
     font-size: 2.5rem;
     text-align: center;
+  }
+
+  .image {
+    padding: 0 20px;
   }
 }
 

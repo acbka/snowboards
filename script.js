@@ -104,7 +104,90 @@ function scrollPage(){
    }
 } 
 
-backgroundImage()
+// carusel
+
+function carusel(){
+   //let images = Array.from(document.querySelectorAll(".image"));
+
+   let images = [
+      "./img/board1.png",
+      "./img/board2.png",
+      "./img/board3.png",
+      "./img/board4.png",
+      "./img/board5.png"
+   ];
+
+   let length = images.length;
+
+   let n = 1;
+
+   if (document.body.clientWidth > 1155) { 
+      n = 3; 
+   } else if (document.body.clientWidth > 866) {
+      n = 2;
+   }
+
+   let start = 0;
+   let end = n;
+
+   createList(start, end);
+
+   let arrayLi = document.querySelectorAll(".image");
+
+   //visible();
+
+   document.querySelector(".prev").addEventListener("click", function(){
+      if (start < length-1) {
+         start ++;
+      } else { 
+         start = 0;
+      }; 
+      changeList(start);
+   })
+
+   document.querySelector(".next").addEventListener("click", function(){
+      if (start == 0) {
+         start = length-1;
+      } else { 
+         start --;
+      }; 
+      changeList(start);
+   })
+
+
+   function createList(start, end){
+      for (let i = start; i < end; i++) {
+         let img = document.createElement("img");
+         img.src = images[i];
+         let li = document.createElement("li");
+         li.classList.add("image"); 
+         li.appendChild(img);
+         document.querySelector(".images").appendChild(li)
+      }
+   }
+
+   function changeList(count){
+      arrayLi.forEach(elem => { 
+         elem.removeChild(elem.firstChild); 
+         let img = document.createElement("img");
+         img.src = images[count]; 
+         elem.appendChild(img);
+         if (count < length - 1){
+            count ++;
+         }  else {
+            count = 0;
+         }
+      })
+   }
+
+
+}
+
+
+
+
+//backgroundImage()
 burgerMenu()
 activeMenuItem() 
 scrollPage()
+carusel()
